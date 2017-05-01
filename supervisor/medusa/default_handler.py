@@ -93,7 +93,7 @@ class default_handler:
 
         if self.filesystem.isdir (path):
             if path and path[-1] != '/':
-                request['Location'] = 'http://%s/%s/' % (
+                request['Location'] = 'https://%s/%s/' % (
                         request.channel.server.server_name,
                         path
                         )
